@@ -96,7 +96,7 @@ plt.show()
 # Prediction vs. actual value (change the index to view a different input and output set)
 index = 0
 
-classes = ['no kidney stone detected', 'kidney stone detected']
+classes = ['no kidney stone detected', 'kidney stone detected'] # The index of the class corresponds to its categorization
 
 pred_prob = model.predict([x_test[index]])[0][0]
 prediction = 1 if pred_prob > 0.5 else 0
