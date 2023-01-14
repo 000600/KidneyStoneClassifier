@@ -10,7 +10,17 @@ This neural network (found in the **kidney_stone_classifier.py** file) predicts 
 
 Feel free to further tune the hyperparameters or build upon the model!
 
-## The XGB Regressor
-An XGBoost Regressor model is also included in the **xgb_possum_regression.py** file to compare the neural networks to the regressor. The XGBoost Regressor has 100 estimators, a learning rate of 0.001, and early stopping based on validation sets. The regressor predicts the likelihood someone has a kidney stone based on the same inputs as the model in the **kidney_stone_classifier.py** file. Although the number of estimators is lower than usual, I found that it achieved similar results.
+## The XGB Classifier
+An XGBoost Regressor model is also included in the **kidney_stone_xgb.py** file** file to compare the neural networks to the classifier. The XGBoost classifer has 100 estimators, a learning rate of 0.001, and early stopping based on validation sets. The classifier predicts the likelihood someone has a kidney stone based on the same inputs as the model in the **kidney_stone_classifier.py** file. Although the number of estimators is lower than usual, I found that it achieved similar results.
 
-As with the neural network, feel free to tune the hyperparameters or build upone the regressor!
+As with the neural network, feel free to tune the hyperparameters or build upone the classifier!
+
+## The Dataset
+The dataset can be found at this link: https://www.kaggle.com/datasets/vuppalaadithyasairam/kidney-stone-prediction-based-on-urine-analysis. Credit for the dataset collection goes to **Atilla Özkaymak**, **Philippe Billet**, **Vuppala Adithya Sairam**, and others on *Kaggle*. It describes whether or not a person has a kidney stone (encoded as 0 or 1) based on urine analysis that includes multiple factors, such as:
+- Calcium concentration in urine
+- PH of urine
+- Osmolarity of urine
+- Conductivity of urine
+
+Note that the initial dataset is biased (this statistic can be found on the data's webpage); it contains a higher representation of non-kidney stone cases (encoded as 0's in this model) than kidney stone cases (encoded as 1's in this model). This issue is addressed within the classifier file using Imbalanced-Learn's **SMOTE()**, which oversamples the minority class within the dataset.
+
