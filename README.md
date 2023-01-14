@@ -1,7 +1,7 @@
 # Kidney Stone Classifier
 
 ## The Neural Network
-This neural network (found in the **kidney_stone_classifier.py** file) predicts whether or not a patient has a kidney stone based on urine analysis that takes into account multiple different factors. The model will predict a value close to 0 if the patient is predicted to not have a kidney stone and a 1 if the patient is predicted to have a kidney stone. Since the model only predicts binary categorical values, the model uses a binary crossentropy loss function and has 1 output neuron. The model uses a standard Adam optimizer with a learning rate of 0.001 and multiple dropout layers to prevent overfitting. The model has an architecture consisting of:
+This neural network (found in the **kidney_stone_classifier.py** file) predicts whether or not a patient has a kidney stone based on urine analysis that takes into account multiple different factors. The model will predict a value close to 0 if the patient is predicted to not have a kidney stone and a 1 if the patient is predicted to have a kidney stone. Since the model only predicts binary categorical values, the model uses a binary crossentropy loss function and has 1 output neuron. The model uses a standard Adam optimizer with a learning rate of 0.001 in addition to multiple dropout layers and early stopping to prevent overfitting. The model has an architecture consisting of:
 - 1 Batch Normalization layer
 - 1 Input layer (with 7 input neurons and a ReLU activation function)
 - 1 Hidden layer (with 256 neurons and a ReLU activation function)
@@ -11,3 +11,6 @@ This neural network (found in the **kidney_stone_classifier.py** file) predicts 
 Feel free to further tune the hyperparameters or build upon the model!
 
 ## The XGB Regressor
+An XGBoost Regressor model is also included in the **xgb_possum_regression.py** file to compare the neural networks to the regressor. The XGBoost Regressor has 100 estimators, a learning rate of 0.001, and early stopping based on validation sets. The regressor predicts the likelihood someone has a kidney stone based on the same inputs as the model in the **kidney_stone_classifier.py** file. Although the number of estimators is lower than usual, I found that it achieved similar results.
+
+As with the neural network, feel free to tune the hyperparameters or build upone the regressor!
