@@ -11,7 +11,7 @@ This neural network (found in the **kidney_stone_classifier.py** file) predicts 
 Feel free to further tune the hyperparameters or build upon the model!
 
 ## The XGB Classifier
-An XGBoost Regressor model is also included in the **kidney_stone_xgb.py** file** file to compare the neural networks to the classifier. The XGBoost classifier has 100 estimators, a learning rate of 0.001, and early stopping based on validation sets. The classifier predicts the likelihood someone has a kidney stone based on the same inputs as the model in the **kidney_stone_classifier.py** file. Although the number of estimators is lower than usual, I found that it achieved similar results.
+An XGBoost Regressor model is also included in the **kidney_stone_xgb.py** file file to compare the neural networks to the classifier. The XGBoost classifier has 100 estimators, a learning rate of 0.001, and early stopping based on validation sets. The classifier predicts the likelihood someone has a kidney stone based on the same inputs as the model in the **kidney_stone_classifier.py** file. Although the number of estimators is lower than usual, I found that it achieved similar results.
 
 As with the neural network, feel free to tune the hyperparameters or build upon the classifier!
 
