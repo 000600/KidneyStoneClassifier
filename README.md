@@ -24,3 +24,16 @@ The dataset can be found at this link: https://www.kaggle.com/datasets/vuppalaad
 
 Note that the initial dataset is biased (this statistic can be found on the data's webpage); it contains a higher representation of non-kidney stone cases (encoded as 0's in this model) than kidney stone cases (encoded as 1's in this model). This issue is addressed within the classifier file using Imbalanced-Learn's **SMOTE()**, which oversamples the minority class within the dataset.
 
+## Libraries
+These neural networks and XGBoost Regressor were created with the help of the Tensorflow, Scikit-Learn, and XGBoost libraries.
+- Tensorflow's Website: https://www.tensorflow.org/
+- Tensorflow Installation Instructions: https://www.tensorflow.org/install
+- Scikit-Learn's Website: https://scikit-learn.org/stable/
+- Scikit-Learn's Installation Instructions: https://scikit-learn.org/stable/install.html
+- XGBoost's Website: https://xgboost.readthedocs.io/en/stable/#
+- XGBoost's Installation Instructions: https://xgboost.readthedocs.io/en/stable/install.html
+- Imbalanced-Learn's Website: https://imbalanced-learn.org/stable/about.html
+- Imbalanced-Learn's Installation Instructions: https://pypi.org/project/imbalanced-learn/
+
+## Disclaimer
+Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual medical use or application in any way. 
