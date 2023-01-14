@@ -24,7 +24,7 @@ x, y = smote.fit_resample(x, y)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.25, random_state = 1, stratify = y)
 
 # Create model
-model = XGBClassifier(n_estimators = 100)
+model = XGBClassifier(n_estimators = 100, lr = 0.001)
 
 # Train model
 model.fit(x_train, y_train, eval_set = [(x_test, y_test)], verbose = 1)
