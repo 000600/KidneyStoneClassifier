@@ -5,7 +5,7 @@ This neural network (found in the **kidney_stone_classifier.py** file) predicts 
 - 1 Batch Normalization layer
 - 1 Input layer (with 7 input neurons and a ReLU activation function)
 - 1 Hidden layer (with 256 neurons and a ReLU activation function)
-- 1 Dropout layers (with a dropout rate of 0.3)
+- 1 Dropout layer (with a dropout rate of 0.3)
 - 1 Output layer (with 1 output neuron and a sigmoid activation function)
 
 Feel free to further tune the hyperparameters or build upon the model!
